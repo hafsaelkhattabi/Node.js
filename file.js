@@ -6,7 +6,7 @@ var port = 2000;
 
 http.createServer(function (request, response) {
     
-    var path = __dirname + '/file.html'; 
+    var path = './file.html' 
 
     fs.readFile(path, "utf8", function (err, data) {
         if (err) {
